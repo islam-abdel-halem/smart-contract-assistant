@@ -1,0 +1,26 @@
+# Environment & API Keys
+.env
+
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# FAISS Local Index (generated at runtime)
+faiss_index/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Test Data (optional - remove this line if you want to include test files)
+# test_data/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
