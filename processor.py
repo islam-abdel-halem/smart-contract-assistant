@@ -5,7 +5,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 import docx
 
 def process_document(file_path):
-    # 1. Identify file type and load it [cite: 15, 52]
+    # 1. Identify file type and load it 
     if file_path.endswith('.pdf'):
         loader = PyMuPDFLoader(file_path)
         documents = loader.load()
@@ -17,7 +17,7 @@ def process_document(file_path):
     else:
         raise ValueError("Unsupported file format! Please upload a PDF or DOCX file.")
 
-    # 2. Split text into Chunks [cite: 16, 60]
+    # 2. Split text into Chunks 
     # We chose RecursiveCharacterTextSplitter as it is best for preserving the context of legal paragraphs
     text_splitter = RecursiveCharacterTextSplitter(
         chunk_size=1000, 
